@@ -1,66 +1,80 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 
-#game-container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
 }
 
-#game-title {
-  font-size: 24px;
-  margin-bottom: 20px;
+h1 {
+    text-align: center;
 }
 
-#game-content {
-  width: 500px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+.game-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#data-points {
-  margin-bottom: 20px;
+.machine-learning-model {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-#data-points-count {
-  font-size: 16px;
-  margin-bottom: 10px;
+.machine-learning-model img {
+    width: 100%;
+    height: auto;
 }
 
-#generate-data {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
 }
 
-#machine-learning {
-  text-align: center;
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
 }
 
-#machine-learning-model {
-  font-size: 16px;
-  margin-bottom: 10px;
+.stats {
+    margin-top: 10px;
 }
 
-#model-accuracy {
-  font-weight: bold;
+.stats p {
+    margin-bottom: 5px;
 }
 
-#train-model {
-  padding: 10px 20px;
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.resources {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.resource {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.resource img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
