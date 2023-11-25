@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Idle Machine Learning Game</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Machine Learning Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="game-container">
-    <div id="game-title">Idle Machine Learning Game</div>
-    <div id="game-content">
-      <div id="data-points">
-        <div id="data-points-count">Data Points: 0</div>
-        <button id="generate-data">Generate Data</button>
-      </div>
-      <div id="machine-learning">
-        <div id="machine-learning-model">Machine Learning Model: <span id="model-accuracy">0%</span></div>
-        <button id="train-model">Train Model</button>
-      </div>
-    </div>
-  </div>
+    <div class="container">
+        <h1>Idle Machine Learning Game</h1>
 
-  <script src="script.js"></script>
+        <div class="game-area">
+            <div class="machine-learning-model">
+                <img src="ai-model.png" alt="AI Model">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="stats">
+                    <p>Accuracy: <span id="accuracy"></span></p>
+                    <p>Data Processed: <span id="dataProcessed"></span></p>
+                </div>
+            </div>
+
+            <div class="resources">
+                <div class="resource">
+                    <img src="data.png" alt="Data">
+                    <span id="dataCount">0</span>
+                </div>
+                <div class="resource">
+                    <img src="processingPower.png" alt="Processing Power">
+                    <span id="processingPowerCount">0</span>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="collectData">Collect Data</button>
+                <button id="upgradeProcessingPower">Upgrade Processing Power</button>
+                <button id="trainModel">Train Model</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
